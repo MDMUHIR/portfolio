@@ -66,37 +66,38 @@ const skills = ref([
 </script>
 
 <template>
-  <h3 class="heading m-4 px-1 py-2 border-bottom">
-    My Skills
-    <div class="navbar-brand spinner-grow" role="status">
-      <span class="visually-hidden">Loading...</span>
-    </div>
-  </h3>
-  <div class="w-100 rounded pb-5 text-light">
-    <div
-      class="skills row d-flex align-items-center justify-content-around w-100 p-3 rounded"
-      style="margin-inline-start: 1px"
-    >
-     
-      <template v-for="skill in skills" key="skill.title">
-        <a
-          :href="skill.webLink"
-          type="button"
-          class="btn skill my-1 fw-semibold text-light"
-          style="width: auto; max-width: 200px"
-        >
-          <img :src="skill.image" alt="" class="w-25 me-1" />{{ skill.title }}
-        </a>
-      </template>
-    </div>
+  <div class="main border-end border-5 border-danger">
+    <h3 class="heading m-4 px-1 py-2 border-bottom text-end">
+      <div class="navbar-brand spinner-grow" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      My Skills
+    </h3>
+    <div class="w-100 rounded pb-5 text-light">
+      <div
+        class="skills row d-flex align-items-center justify-content-end w-100 p-3 rounded"
+        style="margin-inline-start: 1px"
+      >
+        <template v-for="skill in skills" key="skill.title">
+          <a
+            :href="skill.webLink"
+            type="button"
+            class="btn skill my-1 fw-semibold text-light"
+            style="width: auto; max-width: 200px"
+          >
+            <img :src="skill.image" alt="" class="w-25 me-1" />{{ skill.title }}
+          </a>
+        </template>
+      </div>
 
-    <div class="ext-skill">
-      <div class="most-used-lang mt-3 w-100 text-center">
-        <img
-          src="https://camo.githubusercontent.com/f8b01ab87530f692267ede564a1ab7a80e89e1aa3e6e25e88f48ff8d3f600a7d/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d6d646d75686972267468656d653d6d6f6e6f6b61692673686f775f69636f6e733d74727565266c6f63616c653d656e266c61796f75743d636f6d70616374"
-          alt="mdmuhir"
-          class="stats"
-        />
+      <div class="ext-skill">
+        <div class="most-used-lang mt-3 p-3 d-flex justify-content-end">
+          <img
+            src="https://camo.githubusercontent.com/f8b01ab87530f692267ede564a1ab7a80e89e1aa3e6e25e88f48ff8d3f600a7d/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d6d646d75686972267468656d653d6d6f6e6f6b61692673686f775f69636f6e733d74727565266c6f63616c653d656e266c61796f75743d636f6d70616374"
+            alt="mdmuhir"
+            class="stats"
+          />
+        </div>
       </div>
     </div>
   </div>

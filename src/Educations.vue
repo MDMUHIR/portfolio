@@ -4,17 +4,17 @@ import { ref } from "vue";
 </script>
 
 <template>
-  <div class="container-sm mb-5">
+  <div class="mb-5 border-start border-5">
     <div class="m-4 text-light px-1 py-2 border-bottom">
       <h4 class="heading">
-        Educational Qualifications
+       🎓 Educational Qualifications
         <div class="navbar-brand spinner-grow" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
       </h4>
     </div>
 
-    <div class="d-flex flex-row flex-wrap justify-content-center">
+    <div class="d-flex flex-row flex-wrap justify-content-start">
       <div
         v-for="(edu, index) in educations"
         :key="index"
