@@ -5,7 +5,7 @@
     <div class="hero-div row g-0 d-flex justify-content-center">
       <img
         src="../assets/hero.png"
-        class="rounded-3 shadow mt-5"
+        class="rounded-3 shadow mt-5 user-select-none"
         style="
           max-height: 600px;
           width: auto;

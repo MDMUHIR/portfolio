@@ -66,22 +66,18 @@ const skills = ref([
 </script>
 
 <template>
-  <h3 class="m-4 text-light px-1 py-2 border-bottom">
+  <h3 class="heading m-4 px-1 py-2 border-bottom">
     My Skills
     <div class="navbar-brand spinner-grow" role="status">
       <span class="visually-hidden">Loading...</span>
     </div>
   </h3>
-  <div class="w-100 rounded pb-4 text-light">
+  <div class="w-100 rounded pb-5 text-light">
     <div
       class="skills row d-flex align-items-center justify-content-around w-100 p-3 rounded"
       style="margin-inline-start: 1px"
     >
-      <!--   background-image: linear-gradient(
-          174.2deg,
-          rgb(59, 59, 59) 7.1%,
-          rgb(175, 175, 175) 67.4%
-        ); -->
+     
       <template v-for="skill in skills" key="skill.title">
         <a
           :href="skill.webLink"

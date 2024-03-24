@@ -1,89 +1,70 @@
 <script setup>
-import Github from "../../assets/icons/contact/Github.vue";
-import Skype from "../../assets/icons/contact/Skype.vue";
-import Mail from "../../assets/icons/contact/Mail.vue";
-import LinkedIn from "../../assets/icons/contact/LinkedIn.vue";
-import Youtube from "../../assets/icons/contact/Youtube.vue";
-import Whatsapp from "../../assets/icons/contact/Whatsapp.vue";
-import { ref } from "vue";
-import { toast } from "vue3-toastify";
-const showmail = ref(false);
-
-const copyText = () => {
-  navigator.clipboard.writeText("mdmuhir04@gmail.com");
-
-  showmail.value = true;
-
-  toast("Email Address Copied !", {
-    autoClose: 1000,
-    theme: "auto",
-    type: "success",
-    position: "bottom-right",
-  }); // ToastOptions
-};
+import Github from "../assets/icons/contact/Github.vue";
 </script>
 
 <template>
-  <div class="container bg-white pt-3 mt-5 rounded">
-    <h4 class="text-center p-1 bg-warning rounded">Ways to Contact me</h4>
-    <div class="links">
-      <ul class="list-group">
-        <li class="link list-group-item d-flex">
-          <a
-            href="https://github.com/MDMUHIR"
-            class="w-100 text-decoration-none fs-5 fw-medium btn btn-light"
-            ><Github /> <span>Github</span></a
-          >
-        </li>
-        <li class="link list-group-item d-flex">
-          <div
-            @click="copyText()"
-            class="w-100 d-flex justify-content-center align-items-center btn btn-light"
-          >
-            <Mail />
-            <p v-if="showmail" class="px-2 mt-3 fw-medium user-select-all">
-              mdmuhir04@gmail.com
-            </p>
-            <h5 v-else class="px-2 mt-1 fs-5">Mail</h5>
-          </div>
-        </li>
-        <li class="link list-group-item d-flex">
-          <a
-            href="https://join.skype.com/invite/um45L2MIzxQP"
-            class="w-100 text-decoration-none fs-5 fw-medium btn btn-light"
-            ><Skype /> <span>Skype</span></a
-          >
-        </li>
+  <div class="contacts pb-4">
+    <h4 class="heading border-bottom m-4 px-1 py-2 text-center ">
+      📞 Feel free to contact me
+    </h4>
 
-        <li class="link list-group-item d-flex">
-          <a
-            href="https://www.linkedin.com/in/md-muhir-uddin"
-            class="w-100 text-decoration-none fs-5 fw-medium btn btn-light"
-            ><LinkedIn /> <span>LinkedIn</span></a
-          >
-        </li>
-        <li class="link list-group-item d-flex">
-          <a
-            href="https://wa.link/sytqw7"
-            class="w-100 text-decoration-none fs-5 fw-medium btn btn-light"
-            ><Whatsapp /> <span>Whatsapp</span></a
-          >
-        </li>
-
-        <li class="link list-group-item d-flex">
-          <a
-            href="https://www.youtube.com/channel/UC09M-vv3Tt1253Q1OfrIY-A"
-            class="w-100 text-decoration-none fs-5 fw-medium btn btn-light"
-            ><Youtube /> <span>Youtube</span></a
-          >
-        </li>
-      </ul>
-
-      <p class="text-end pt-3 font-monospace" style="font-size: xx-small">
-        ©️2024
-      </p>
-    </div>
+    <p class="text-center">
+      <a href="https://github.com/MDMUHIR" target="blank"> <Github /></a>
+      <a href="https://join.skype.com/invite/um45L2MIzxQP" target="blank">
+        <img
+          align="top"
+          src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/skype.svg"
+          alt="skype"
+          width="40"
+          height="30"
+      /></a>
+      <a href="mailto:mdmuhir04@gmail.com" target="blank"
+        ><img
+          align="top"
+          src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/gmail/default.svg"
+          width="40"
+          height="30"
+          alt="gmail logo"
+      /></a>
+      <a href="https://wa.link/m875rv" target="blank">
+        <img
+          align="top"
+          src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/whatsapp/default.svg"
+          width="40"
+          height="30"
+          alt="whatsapp logo"
+      /></a>
+      <a href="https://linkedin.com/in/md-muhir" target="blank"
+        ><img
+          align="top"
+          src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
+          alt="md-muhir"
+          height="30"
+          width="40"
+      /></a>
+      <a href="https://twitter.com/md_muhiruddin" target="blank"
+        ><img
+          align="top"
+          src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
+          alt="md_muhiruddin"
+          height="30"
+          width="40"
+      /></a>
+      <a href="https://www.youtube.com/c/hitman's code" target="blank"
+        ><img
+          align="top"
+          src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
+          alt="hitman's code"
+          height="30"
+          width="40"
+      /></a>
+    </p>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.border-bottom {
+  border-color: #655a42 !important;
+  color: #ddb966 !important;
+}
+</style>
