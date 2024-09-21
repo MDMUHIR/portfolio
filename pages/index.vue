@@ -1,11 +1,10 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-
+  <div class="">
+    <Home class="z-20" />
+    <Skills />
+  </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

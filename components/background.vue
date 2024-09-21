@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#2c2b2b]" id="large-header" ref="largeHeader">
+  <div class="bg-[#2c2b2b] fixed inset-0 z-[-1]" id="large-header" ref="largeHeader">
     <canvas id="demo-canvas" ref="demoCanvas"> </canvas>
 
     <div class="area">
