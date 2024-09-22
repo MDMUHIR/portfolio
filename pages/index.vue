@@ -2,8 +2,9 @@
 
 <template>
   <div class="">
-    <Home class="z-20" />
+    <Home  />
     <Skills />
+    <Services />
   </div>
 </template>
 

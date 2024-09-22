@@ -45,22 +45,110 @@ const skills = reactive([
     link: "https://tailwindcss.com/",
     icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
   },
-  
 ]);
 </script>
 
 <template>
   <div class="main p-10">
-    <h1 class="text-4xl mb-5 text-white">💻 Tech Stacks</h1>
+    <h1 class="text-3xl mb-5 text-white">💻 Tech Stacks</h1>
     <div class="showcase flex flex-wrap justify-center gap-5">
       <div v-for="(skill, index) in skills" :key="index">
-        <div class="px-5 py-2 flex justify-center items-center border ">
+        <div class="px-5 py-2 flex justify-center items-center btn10">
           <img :src="skill.icon" alt="" class="w-12" />
-          <p class="text-lg font-bold text-white ml-2">{{ skill.name }}</p>
+          <p class="text-lg font-extrabold text-white ml-2">{{ skill.name }}</p>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.btn10 {
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  
+}
+
+/* Btn 10  */
+.btn10 {
+  
+  font-family: "proxima-nova", sans-serif;
+
+  text-transform: uppercase !important;
+  letter-spacing: 2px;
+  color: #fff;
+  cursor: hand;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: transparent !important;
+  z-index: 10;
+}
+
+.btn10:hover {
+  border: 1px solid #071982;
+  color: #80ffd3 !important;
+}
+.btn10::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #e1110a;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+}
+
+.btn10::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #80ffd3;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all 0.94s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -moz-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+}
+.btn10:hover::before,
+.btn1O:hover::before {
+  opacity: 1;
+  width: 116%;
+}
+.btn10:hover::after,
+.btn1O:hover::after {
+  opacity: 1;
+  width: 120%;
+}
+</style>

@@ -9,7 +9,11 @@ module.exports = {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      scrollbar: {
+        hide: "scrollbar-width: none; -ms-overflow-style: none;", // Hide for Firefox and IE
+      },
+    },
   },
   plugins: [],
 };

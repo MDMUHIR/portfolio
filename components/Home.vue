@@ -19,7 +19,7 @@
       <h4 class="text-sm font-bold italic mb-2 font-mono">
         I appreciate you taking the time to explore my profile.
       </h4>
-      <p class="text-xl px-10 font-mono">
+      <p class="text-xl px-10 font-mono mb-6">
         With expertise in web development and hands-on experience using a
         variety of powerful tools, I embarked on my journey in 2021 to craft a
         meaningful career in this dynamic field. My passion for technology
@@ -29,6 +29,17 @@
         developer, I'm open to exciting opportunities that allow me to innovate
         and grow in this ever-evolving landscape!
       </p>
+      <div class="buttons flex justify-center">
+        <a
+          href="https://github.com/MDMUHIR/CV.pdf/archive/refs/heads/main.zip"
+          class="custom-btn btn-12"
+        >
+          <span>Download</span><span>CV </span></a
+        >
+        <a href="https://github.com/MDMUHIR" class="custom-btn btn-12 mx-3">
+          <span>Visit</span><span>GitHub </span></a
+        >
+      </div>
     </div>
   </div>
 </template>
