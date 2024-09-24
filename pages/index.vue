@@ -2,7 +2,8 @@
 
 <template>
   <div class="">
-    <Home  />
+    <Start />
+    <Home />
     <Skills />
     <Services />
   </div>

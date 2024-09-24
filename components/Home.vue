@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="main text-center text-white py-10">
+  <div class="main Home text-center text-white py-10">
     <h1 class="text-xl font-mono">Hi! I’m</h1>
     <!-- typeWriter -->
     <div class="container">
@@ -15,8 +15,9 @@
         </h1>
       </div>
     </div>
+
     <div class="cover-latter p-2 mt-5">
-      <h4 class="text-sm font-bold italic mb-2 font-mono">
+      <h4 class="text-sm font-bold italic mb-4 font-mono">
         I appreciate you taking the time to explore my profile.
       </h4>
       <p class="text-xl px-10 font-mono mb-6">

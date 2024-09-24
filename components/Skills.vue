@@ -53,10 +53,13 @@ const skills = reactive([
     <h1 class="text-3xl mb-5 text-white">💻 Tech Stacks</h1>
     <div class="showcase flex flex-wrap justify-center gap-5">
       <div v-for="(skill, index) in skills" :key="index">
-        <div class="px-5 py-2 flex justify-center items-center btn10">
+        <a
+          :href="skill.link"
+          class="px-5 py-2 flex justify-center items-center btn10"
+        >
           <img :src="skill.icon" alt="" class="w-12" />
           <p class="text-lg font-extrabold text-white ml-2">{{ skill.name }}</p>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -70,12 +73,10 @@ const skills = reactive([
   text-align: center;
   position: relative;
   text-decoration: none;
-  
 }
 
 /* Btn 10  */
 .btn10 {
-  
   font-family: "proxima-nova", sans-serif;
 
   text-transform: uppercase !important;
