@@ -9,6 +9,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
+  app: {
+    baseURL: "/portfolio/", // baseURL: '/<repository>/'
+    buildAssetsDir: "assets",
+  },
   plugins: [
     "~/plugins/gsap.js", // Register the GSAP plugin
   ],

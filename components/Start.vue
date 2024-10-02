@@ -59,6 +59,7 @@ onBeforeUnmount(() => {
 <template>
   <div class="wrapper">
     <div class="intro">
+
       <p class="text-6xl font-extrabold">Front-end Developer</p>
     </div>
 
@@ -86,9 +87,7 @@ onBeforeUnmount(() => {
 }
 
 .intro p {
-
   font-family: "Chelsea Market", system-ui;
-
 }
 
 .content {

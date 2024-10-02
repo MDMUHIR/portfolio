@@ -2,7 +2,6 @@
 
 <template>
   <div class="">
-    <Start />
     <Home />
     <Skills />
     <Services />

@@ -96,7 +96,7 @@ const toggleDescription = ref(null);
 
 <template>
   <div class="main services p-10">
-    <h1 class="text-3xl mb-5 text-white">⚙️Services</h1>
+    <h1 class="text-3xl mb-5 text-white font-mono font-bold text-center">Services</h1>
     <div
       class="h-64 overflow-y-scroll Scrollbar shadow-inner shadow-white bg-black/50 rounded-[5px] py-2"
     >

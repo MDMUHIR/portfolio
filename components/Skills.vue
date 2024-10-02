@@ -49,13 +49,13 @@ const skills = reactive([
 </script>
 
 <template>
-  <div class="main p-10">
-    <h1 class="text-3xl mb-5 text-white">💻 Tech Stacks</h1>
+  <div class="main p-10 text-center">
+    <h1 class="text-3xl font-mono font-bold mb-5 text-white">My Tech Stacks</h1>
     <div class="showcase flex flex-wrap justify-center gap-5">
       <div v-for="(skill, index) in skills" :key="index">
         <a
           :href="skill.link"
-          class="px-5 py-2 flex justify-center items-center btn10"
+          class="px-5  flex justify-end items-end btn10  py-4 bg-black/25 rounded"
         >
           <img :src="skill.icon" alt="" class="w-12" />
           <p class="text-lg font-extrabold text-white ml-2">{{ skill.name }}</p>
@@ -78,27 +78,24 @@ const skills = reactive([
 /* Btn 10  */
 .btn10 {
   font-family: "proxima-nova", sans-serif;
-
   text-transform: uppercase !important;
   letter-spacing: 2px;
   color: #fff;
   cursor: hand;
   text-align: center;
   text-transform: capitalize;
-  border: 1px solid #fff;
-  border-radius: 50px;
   position: relative;
   overflow: hidden !important;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: transparent !important;
+  /* background: transparent !important; */
   z-index: 10;
 }
 
 .btn10:hover {
-  border: 1px solid #071982;
+
   color: #80ffd3 !important;
 }
 .btn10::before {
