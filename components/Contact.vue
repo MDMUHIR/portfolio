@@ -37,11 +37,11 @@ const contacts = reactive([
 
 <template>
   <div class="main">
-    <div class="showcase flex flex-col justify-end items-center gap-y-5 bg-[#000000ab] py-2 border border-red-500 px-1">
+    <div class="showcase flex flex-col justify-end items-center  gap-y-5 bg-[#000000ab] py-2 border border-red-500 md:px-1">
       <div class="w-1.5 border h-32 bg-[#dc2525eb]"></div>
       <div v-for="(contact, index) in contacts" :key="index">
-        <a :href="contact.link" class=" ">
-          <img :src="contact.image" alt="" class="w-6 mx-auto" />
+        <a :href="contact.link" >
+          <img :src="contact.image" alt="" class="w-5 md:w-6 mx-auto" />
         </a>
       </div>
     </div>

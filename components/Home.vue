@@ -2,14 +2,16 @@
 
 <template>
   <div class="main Home text-white">
-    <div class="hero flex items-center justify-normal flex-col md:flex-row">
-      <div class="right-part w-2/3 mt-10 md:mt-0 md:pt-0">
-        <h1 class="text-2xl font-mono text-center">Hi! I’m</h1>
+    <div
+      class="hero flex items-center justify-normal flex-col md:flex-row bg-black/75 rounded-b-3xl m-2 mt-0"
+    >
+      <div class="left-part w-2/3 mt-10 md:mt-0 md:pt-0 flex flex-col items-center">
+        <h1 class="text-2xl lg:text-4xl 2xl:text-6xl font-mono text-center">Hi! I’m</h1>
         <!-- typeWriter -->
         <div class="container">
           <div class="Hero-text">
             <h1
-              class="typewriter text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-right"
+              class="typewriter text-3xl sm:text-4xl md:text-5xl xl:text-7xl 2xl:text-9xl font-bold text-right"
             >
               <span
                 class="bg-clip-text text-transparent bg-[url('@/public/images/bg.png')] bg-contain"
@@ -20,7 +22,7 @@
           </div>
         </div>
         <h1
-          class="text-lg sm:text-2xl font-mono font-bold mb-8 text-center italic"
+          class="text-lg sm:text-2xl lg:text-3xl font-mono font-bold mb-6 mt-2 text-center italic"
         >
           A Front-end Developer
         </h1>
@@ -28,36 +30,36 @@
         <div class="buttons flex justify-center z-20">
           <a
             href="https://github.com/MDMUHIR/CV.pdf/archive/refs/heads/main.zip"
-            class="custom-btn btn-12"
+            class="custom-btn btn-12 border-[#D5A45A] mr-2"
           >
             <span>Download</span><span>CV </span></a
           >
-          <a href="https://github.com/MDMUHIR" class="custom-btn btn-12 mx-3">
+          <a href="https://github.com/MDMUHIR" class="custom-btn btn-12 ml-2">
             <span>Visit</span><span>GitHub </span></a
           >
         </div>
       </div>
 
       <!-- image -->
-      <div class="image md:w-1/3 relative mr-1">
+      <div class="image-part md:w-1/3 relative mr-1  pt-3">
         <img
-          class="w-1/2 mx-auto md:w-full"
+          class="w-1/2 mx-auto md:w-full max-w-80  lg:max-w-96  2xl:max-w-[32rem]"
           src="@/public/images/myimg.png"
           alt=""
         />
         <h4 class="text-[12px] font-bold italic mb-4 font-mono text-right mr-6">
           I appreciate you taking the time to explore my profile
         </h4>
-        <Contact class="absolute bottom-20 right-0 md:right-7 z-0" />
+        <Contact class="absolute bottom-16 right-0 md:right-7 z-0" />
       </div>
     </div>
 
     <!-- cover letter -->
-    <div class="cover-latter">
+    <div class="cover-latter mt-2">
       <h1 class="text-3xl mb-2 ml-2 md:ml-12 font-bold font-mono text-white">
         About <span class="text-red-500">-_-</span>
       </h1>
-      <p class="text-xl px-4 md:px-10 font-mono mb-6 md:ml-10">
+      <p class="text-xl 2xl:text-4xl px-4 md:px-10 font-mono mb-6 md:ml-10">
         With expertise in web development and hands-on experience using a
         variety of powerful tools, I embarked on my journey in 2021 to craft a
         meaningful career in this dynamic field. My passion for technology
