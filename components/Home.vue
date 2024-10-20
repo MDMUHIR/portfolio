@@ -56,10 +56,10 @@
 
     <!-- cover letter -->
     <div class="cover-latter mt-2">
-      <h1 class="text-3xl mb-2 ml-2 md:ml-12 font-bold font-mono text-white">
+      <h1 class="text-3xl 2xl:text-4xl mb-2 ml-2 md:ml-12 font-bold font-mono text-white">
         About <span class="text-red-500">-_-</span>
       </h1>
-      <p class="text-xl 2xl:text-4xl px-4 md:px-10 font-mono mb-6 md:ml-10">
+      <p class="text-xl 2xl:text-3xl px-4 md:px-10 font-mono mb-6 md:ml-10">
         With expertise in web development and hands-on experience using a
         variety of powerful tools, I embarked on my journey in 2021 to craft a
         meaningful career in this dynamic field. My passion for technology

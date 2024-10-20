@@ -50,7 +50,7 @@ const skills = reactive([
 
 <template>
   <div class="main p-10 text-center">
-    <h1 class="text-3xl font-mono font-bold mb-5 text-white">My Tech Stacks</h1>
+    <h1 class="text-3xl 2xl:text-4xl font-mono font-bold mb-5 text-white">My Tech Stacks</h1>
     <div class="showcase flex flex-wrap justify-center gap-5">
       <div v-for="(skill, index) in skills" :key="index">
         <a
