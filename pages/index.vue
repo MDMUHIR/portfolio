@@ -3,8 +3,10 @@
 <template>
   <div class="">
     <Home />
-    <Skills />
-    <Services />
+    <div class="md:container mx-auto">
+      <Skills />
+      <Services />
+    </div>
   </div>
 </template>
 

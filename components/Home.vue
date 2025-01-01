@@ -11,10 +11,10 @@
         <div class="container">
           <div class="Hero-text">
             <h1
-              class="typewriter text-3xl sm:text-4xl md:text-5xl xl:text-7xl 2xl:text-9xl font-bold text-right"
+              class="typewriter text-3xl sm:text-4xl md:text-5xl xl:text-7xl 2xl:text-9xl font-semibold  text-right"
             >
               <span
-                class="bg-clip-text text-transparent bg-[url('@/public/images/bg.png')] bg-contain"
+                class="bg-clip-text text-transparent bg-[url('@/public/images/bg.png')] bg-contain object-contain  invert grayscale-[50%]  drop-shadow"
               >
                 MD. MUHIR UDDIN
               </span>
@@ -43,11 +43,11 @@
       <!-- image -->
       <div class="image-part md:w-1/3 relative mr-1  pt-3">
         <img
-          class="w-1/2 mx-auto md:w-full max-w-80  lg:max-w-96  2xl:max-w-[32rem]"
+          class="w-1/2 mx-auto md:w-full max-w-[10rem]  lg:max-w-[20rem]  2xl:max-w-[25rem] grayscale-0 hover:grayscale transition-all duration-300 rounded-full drop-shadow shadow-white"
           src="@/public/images/myimg.png"
           alt=""
         />
-        <h4 class="text-[12px] font-bold italic mb-4 font-mono text-right mr-6">
+        <h4 class="text-[12px] font-bold italic mb-4 font-mono text-center mr-6">
           I appreciate you taking the time to explore my profile
         </h4>
         <Contact class="absolute bottom-16 right-0 md:right-7 z-0" />

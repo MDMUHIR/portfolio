@@ -117,7 +117,7 @@ const toggleDescription = ref(null);
             :class="
               toggleDescription == service.id
                 ? 'text-white decoration-double underline underline-offset-3 decoration-pink-500  '
-                : 'text-[#d4cfcf] hover:text-white'
+                : 'text-[#d4cfcf] hover:text-cyan-300'
             "
           >
             <span class="mr-2">{{ service.id }}.</span>{{ service.title }}

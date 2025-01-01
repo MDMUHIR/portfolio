@@ -10,10 +10,10 @@ export default defineNuxtConfig({
     },
   },
 
-  app: {
-    baseURL: "/portfolio/", // baseURL: '/<repository>/'
-    buildAssetsDir: "assets",
-  },
+  // app: {
+    // baseURL: "/portfolio/", // baseURL: '/<repository>/'
+  //   buildAssetsDir: "assets",
+  // },
   plugins: [
     "~/plugins/gsap.js", // Register the GSAP plugin
   ],
