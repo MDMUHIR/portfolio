@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* For Chrome, Safari, and newer Edge */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -80,7 +81,7 @@
   position: absolute;
   width: 130px;
   height: 40px;
-  border: 1px solid rgb(200, 153, 82);
+  border: 1px solid rgb(212, 59, 59);
   margin: 0;
   text-align: center;
   -webkit-box-sizing: border-box;

@@ -10,11 +10,34 @@ export default defineNuxtConfig({
     },
   },
 
-  // app: {
-    // baseURL: "/portfolio/", // baseURL: '/<repository>/'
-  //   buildAssetsDir: "assets",
-  // },
   plugins: [
-    "~/plugins/gsap.js", // Register the GSAP plugin
+    "~/plugins/crisp.js", //
   ],
+  app: {
+    head: {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display:wght@400;700&display=swap",
+        },
+        {
+          rel: "preload",
+          href: "https://client.crisp.chat/l.js",
+          as: "script",
+        },
+      ],
+      script: [
+        {
+          src: "https://client.crisp.chat/l.js",
+          async: true,
+        },
+      ],
+      // script: [
+      //   {
+      //     src: "https://static.elfsight.com/platform/platform.js",
+      //     async: true,
+      //   },
+      // ],
+    },
+  },
 });

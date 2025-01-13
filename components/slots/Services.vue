@@ -102,10 +102,10 @@ const toggleDescription = ref(null);
     >
       <div class="services flex flex-col justify-center items-center flex-wrap">
         <div
-          class="services text-white px-10 text-center"
+          class="services text-white px-6 text-center"
           :class="
             toggleDescription == service.id
-              ? ' bg-black/50 mx-4  items-center scale-100 rounded-full'
+              ? ' bg-black/50 mx-4  items-center scale-100  rounded-tr-3xl rounded-bl-3xl border'
               : 'scale-75'
           "
           v-for="(service, index) in services"
@@ -113,7 +113,7 @@ const toggleDescription = ref(null);
         >
           <h1
             @click="toggleDescription = service.id"
-            class="lg:text-3xl text-xl m-2 text-bold cursor-pointer flex"
+            class="lg:text-3xl text-xl m-2  text-bold cursor-pointer flex"
             :class="
               toggleDescription == service.id
                 ? 'text-white decoration-double underline underline-offset-3 decoration-pink-500  '

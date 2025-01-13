@@ -1,21 +1,35 @@
 <script setup></script>
 
 <template>
-  <div class="bg-[#212121] fixed inset-0 z-[-1]">
+  <div class="bg-[#121212] fixed inset-0 z-[-1]">
     <div class="area">
       <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class="">
+          <div
+            class="w-[5rem] h-[5rem] bg-red-500/50 rounded-full filter blur-3xl animate-pulse delay-700"
+          ></div>
+        </li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class="">
+          <div
+            class="w-[5rem] h-[5rem] bg-amber-500/50 rounded-full filter blur-3xl animate-pulse delay-700"
+          ></div>
+        </li>
+        <li class=""></li>
+        <li class=""></li>
+        <li class="">
+          <div
+            class="w-[5rem] h-[5rem] bg-amber-500/50 rounded-full filter blur-3xl animate-pulse delay-700"
+          ></div>
+        </li>
+        <li class=""></li>
       </ul>
     </div>
   </div>
@@ -61,6 +75,8 @@
   background: rgba(255, 255, 255, 0.2);
   animation: animate 25s linear infinite;
   bottom: -150px;
+  /* box-shadow: rgba(255, 255, 255, 0.56) 4px 4px 70px 4px; */
+  
 }
 
 .circles li:nth-child(1) {
@@ -68,7 +84,6 @@
   width: 80px;
   height: 80px;
   animation-delay: 0s;
- 
 }
 
 .circles li:nth-child(2) {
@@ -113,7 +128,6 @@
   width: 130px;
   height: 130px;
   animation-delay: 7s;
-  
 }
 
 .circles li:nth-child(8) {
@@ -131,7 +145,6 @@
   height: 15px;
   animation-delay: 2s;
   animation-duration: 35s;
-  
 }
 
 .circles li:nth-child(10) {
@@ -140,7 +153,6 @@
   height: 120px;
   animation-delay: 0s;
   animation-duration: 25s;
- 
 }
 .circles li:nth-child(11) {
   left: 95%;
@@ -157,6 +169,22 @@
   animation-delay: 0s;
   animation-duration: 15s;
   background: #000;
+}
+.circles li:nth-child(13) {
+  left: 2%;
+  width: 18px;
+  height: 18px;
+  animation-delay: 0s;
+  animation-duration: 8s;
+  background: #6e6e6e;
+}
+.circles li:nth-child(14) {
+  left: 98%;
+  width: 18px;
+  height: 18px;
+  animation-delay: 0s;
+  animation-duration: 16s;
+  background: #6e6e6e;
 }
 
 @keyframes animate {
